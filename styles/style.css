@@ -750,6 +750,7 @@ a.about
 #timeline #life {
    height: 640px;
    width: 900px;
+    text-align: left; 
 }
 
 @media (min-width: 768px){
