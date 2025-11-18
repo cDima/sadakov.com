@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="styles">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/styles/LigatureSymbols.zip!/" />
+      <root url="jar://$PROJECT_DIR$/styles/bootstrap-3.2.0-dist.zip!/" />
+      <root url="jar://$PROJECT_DIR$/styles/font-awesome-4.2.0.zip!/" />
+      <root url="jar://$PROJECT_DIR$/styles/bootstrap-3.0.0.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

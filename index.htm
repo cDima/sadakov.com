@@ -1,511 +1,157 @@
 <!DOCTYPE html>
-<html lang="en" class="ready">
-  <head>
-    <!--
-     _           _ _                              _       _              
-  __| |_ __ ___ (_) |_ _ __ _   _   ___  __ _  __| | __ _| | _______   __
- / _` | '_ ` _ \| | __| '__| | | | / __|/ _` |/ _` |/ _` | |/ / _ \ \ / /
-| (_| | | | | | | | |_| |  | |_| | \__ \ (_| | (_| | (_| |   < (_) \ V / 
- \__,_|_| |_| |_|_|\__|_|   \__, | |___/\__,_|\__,_|\__,_|_|\_\___/ \_/  
-                            |___/                                        
-               _       _                                                 
- ___  __ _  __| | __ _| | _______   _____ ___  _ __ ___                  
-/ __|/ _` |/ _` |/ _` | |/ / _ \ \ / / __/ _ \| '_ ` _ \                 
-\__ \ (_| | (_| | (_| |   < (_) \ V / (_| (_) | | | | | |                
-|___/\__,_|\__,_|\__,_|_|\_\___/ \_(_)___\___/|_| |_| |_|                
-      
-    -->
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dmitry Sadakov - SWE</title>
+<html lang="en">
 
-    <!-- <link href="styles/bootstrap-vince.css" rel="stylesheet"> -->
-    <link href="styles/bootstrap.css" rel="stylesheet">
-    <link href="styles/fonts.css" rel="stylesheet">
-    <link href="styles/style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.ico">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dmitry Sadakov - Senior Software Engineer</title>
+  <meta name="description" content="Dmitry Sadakov, Senior Software Engineer. Portfolio and career timeline.">
 
-    <meta name=author content="Dmitry Sadakov"/>
-    <meta name=twitter:card content=summary>
-    <meta name=description content="Dmitry Sadakov, software engineer."/>
-    <meta name=twitter:description content="Dmitry Sadakov, software engineer.">
-    <meta property=og:image content="/images/headshot.jpg"/>
-    <meta name=twitter:image:src content="/imgs/headshot.jpg">
-    <meta name=twitter:creator content="@cdima">
-    <meta name=twitter:url content="https://sadakov.com/">
-    <meta name=twitter:title content="Dmitry Sadakov">
-    <meta property=twitter:account_id content=2675041 />
-    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"/>
-    <link rel=canonical href="https://sadakov.com/"/>
-  </head>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <body data-spy="scroll" data-target="#navbar-primary" id="page-top" class="deck-child-current">
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/modern.css">
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
 
-    <!-- Google Tag Manager -->
-    <!-- <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WZ6PDS"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WZ6PDS');</script>
-    End Google Tag Manager -->
+<body>
 
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="navbar-brand">Dmitry Sadakov</a>
+      <ul class="nav-links">
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-
-    <!-- Intro -->
-    <section id="section-intro" class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-            <img src="imgs/headshot.jpg" width="100" height="100">
-            <h2>Hello, I’m Dmitry.</h2>
-            <p class="lead">Software engineer, coffee lover, father &amp; traveler.</p>
-          </div>
-        </div>      
+  <!-- Hero Section -->
+  <section id="section-intro">
+    <div class="container hero-content">
+      <img src="imgs/headshot.jpg" alt="Dmitry Sadakov" width="150" height="150">
+      <h1>Hello, I'm Dmitry.</h1>
+      <p class="lead">Software Engineer • Coffee Lover • Father • Traveler</p>
+      <div style="margin-top: var(--spacing-md);">
+        <a href="#portfolio" class="card"
+          style="display: inline-block; padding: 1rem 2rem; color: var(--accent-color); font-weight: 600;">View My
+          Work</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="navigation-section">
-      <nav class="navbar" id="nav" role="navigation">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-ico smooth" href="#page-top">Dmitry Sadakov
-                    <div class="navbar-ico-hover"></div>
-                </a>
-              </div>
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                  <li class="active"><a href="#porfolio"  class="smooth">Porfolio</a></li>
-                  <li><a href="#photos" class="smooth">Photos</a></li>
-                  <li><a href="#places" class="smooth">Places</a></li>
-                  <li><a href="#contact" class="smooth">Contact</a></li>
-                </ul>
-              </div>
-            </div>
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <p>Senior Software Engineer with 10+ years of expertise in web, enterprise, and mobile development.</p>
+
+      <div style="margin-bottom: var(--spacing-md);">
+        <a href="/portfolio/dmitry.sadakov.2022.pdf" class="card"
+          style="display: inline-flex; align-items: center; gap: 10px;">
+          <i class="fas fa-file-pdf"></i> Download Resume
+        </a>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="project-card">
+          <div class="project-content">
+            <h3><i class="fab fa-chrome"></i> Smart Lighting</h3>
+            <p>Launched smart lighting chrome extension & apps serving thousands of users per month.</p>
           </div>
         </div>
-      </nav>
-
-    </section>
-
-
-    <!-- Profile -->
-    <section id="profile" class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-              <img src="imgs/rooftop2.jpg" class="img-responsive img-rounded">
+        <div class="project-card">
+          <div class="project-content">
+            <h3><i class="fas fa-code-branch"></i> Open Source</h3>
+            <p>Created open source app reaching 60k users, mentioned on Lifehacker & Gizmodo.</p>
           </div>
-        </div>     
-      </div>
-
-    </section>
-
-    <!-- porfolio -->
-    <section id="porfolio" class="section">
-      <div class="container">
-        
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Portfolio<p class="lead"></h1>
-            <a href="/portfolio/dmitry.sadakov.2022.pdf"><i class="fa fa-file-pdf-o"></i> Download my resume.</a><br />
-            Senior Software Engineer.<br />
-            MS in CS.</p><br />
-          </div>
-        </div>      
-
-        <div class="row">
-          <div class="col-md-3">
-            <p class="lead">Summary of Qualifications</p>
-          </div>
-          <div class="col-md-9">
-            <ul>
-            <li>10+ years expertise in IT: web, enterprise, and mobile development</li>
-            <li>7 years developing software and leading in the fintech for fortune 500 &amp; 1000 companies</li>
-            <li>Strong knowledge of the web platform & paradigms, OOP, algorithms</li>
-            <li>Launched smart lighting chrome extension & apps serving thousands of users per month</li>
-            <li>Created open source app reaching 60k users, mentioned on lifehacker.com, gizmodo.com</li>
-            <li>Passionate about web design and performant apps</li>
-          </ul>
-          </div>
-         <div class="col-md-3">
-            <p class="lead">Education &amp; Publications </p>
-          </div>
-          <div class="col-md-9">
-            <p class="lead">Saint-Petersburg State Technical University, Russia, 2009 – 2011</p>
-            <p>Unfinished PhD in Computer Science; published works include</p>
-            <ul>
-              <li>“Ranking Methods for shared file resources for information retrieval systems based in distributed environments”,  SPbSTU Press, 2010;</li>
-              <li>“Recommender system for massively decentralized file sharing networks”, SPbSTU Press, 2010;</li>
-              <li>“Automation of classification in large collections of documents”, SPbSTU Press 2009;</li>
-              <li>“Synchronization of information retrieval databases in local area network peer-to-peer networks sharing based on Microsoft Sync framework”, Microsoft Technologies in SPbSTU Press, 2009;</li>
-              <li>“Formal verification techniques for multithreaded applications such as Microsoft Chess”, Microsoft Technologies Press at SPbSTU, 2009;</li>
-              <li>“Information retrieval in shared resources in LANs”, Microsoft Technologies at SPbSTU Press, 2009;</li>
-              <li>“Mesh-networking distributed traffic control with ZigBee”, SPbSTU Press 2009;</li>
-            </ul>
-            <p>
-            Saint-Petersburg State Technical University, Russia, 2002 – 2008 </p>
-            <ul>
-              <li>Master’s Degree in Computer Science from the Faculty of Cybernetics; </li>
-              <li>Master Thesis “Information retrieval system for massive peer-to-peer file sharing in local area networks”, Dmitry Sadakov, 2007;</li>
-            </ul>
-          </div>
-        <div class="col-md-3">
-      </div>
-    </section>
-
-
-
-    <!-- Photos -->
-    <section id="timeline-section">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-
-            <div id="timeline" style="height: 570px;">
-              <div id="life" style="height: 590px;">
-                <!-- <div id="arrow">»</div> -->
-                <section class="year" style="left: 0px">2006</section>
-                <section class="year" style="left: 53.61px">2007</section>
-                <section class="year" style="left: 104.31px">2008</section>
-                <section class="year" style="left: 155.14px">2009</section>
-                <section class="year" style="left: 205.81px">2010</section>
-                <section class="year" style="left: 256.53px">2011</section>
-                <section class="year" style="left: 307.22px">2012</section>
-                <section class="year" style="left: 358.06px">2013</section>
-                <section class="year" style="left: 408.75px">2014</section>
-                <section class="year" style="left: 456.75px">2015</section>
-                <section class="year" style="left: 509.75px">2016</section>
-                <section class="year" style="left: 559.75px">2017</section>
-                <section class="year" style="left: 609.75px">2018</section>
-                <div class="event tag-uw" style="margin-left: 0.00px">
-                  <div class="time" style="width: 120px"></div>
-                  <b>2002-2008</b> <a href="http://www.en.spbstu.ru/">Saint-Petersburg State Technical University</a>, Master Degree in Computer Science
-                </div>
-                <div class="event tag-uw" style="margin-left: 120.00px">
-                  <div class="time" style="width: 100px"></div>
-                  <b>2008-2010</b> <a href="http://www.en.spbstu.ru/">Saint-Petersburg State Technical University</a>, PhD in Computer Science
-                </div>
-                <div class="event" style="margin-left: 30px">
-                  <div class="time" style="width: 50px"></div>
-                  <b>06/2006-08-2007</b> <a href="http://gemini-systems.ru/">Scoros International, Inc</a> Social network engineer
-                </div>
-                <div class="event" style="margin-left: 85px">
-                  <div class="time" style="width: 145px"></div>
-                  <b>08/2007</b> <a href="http://gemini-systems.ru/">Gemini Systems, Russia</a> .Net developer &amp; consultant
-                </div>
-
-                <div class="event" style="margin-left: 230px">
-                  <div class="time" style="width: 215px"></div>
-                  <b>07/2010</b> <a href="http://gemini-systems.com/">Gemini Systems, New York</a> SDE 
-                </div>
-
-                <div class="event" style="margin-left: 450px">
-                  <div class="time" style="width: 100px"></div>
-                  <b>07/2014</b> <a href="http://essextec.com/">Essextec, New York</a> SDE SRE Data wiz
-                </div>
-
-                <div class="event" style="margin-left: 550px">
-                  <div class="time" style="width: 80px"></div>
-                  <b>04/2017</b> <a href="https://aws.amazon.com/">Amazon, Seattle</a> SDE at AWS
-                </div>
-                <div class="event" style="margin-left: 620px">
-                  <div class="time" style="width: 100px"></div>
-                  <b>04/2017</b> <a href="http://https://blog.google//">Google, Seattle</a> SWE
-                </div>
-
-
-                <div class="event  tag-google" style="margin-left: 95px">
-                  <div class="time" style="width: 40px"></div>
-                  <b>09/2007-04/2008</b> <a href="http://NYXData.com">NYXData</a> Market Data eCommerce, New York Stock Exchange
-                </div>
-                <div class="event  tag-google" style="margin-left: 135px">
-                  <div class="time" style="width: 40px"></div>
-                  <b>04/2008-03/2009</b>Voronezh City eGovernment Portal
-                </div>
-                <div class="event  tag-google" style="margin-left: 190px">
-                  <div class="time" style="width: 25px"></div>
-                  <b>09/2009-1/2010</b> <a href="http://www.vtb.com/">VTB</a>,  FBConsult, CRM Engineer, Moscow
-                </div>
-                <div class="event tag-google" style="margin-left: 250px">
-                  <div class="time" style="width: 150px"></div>
-                  <b>08/2010</b> <a href="http://nyse.com/">New York Stock Exchange</a> Senior Consultant
-                </div>
-                <div class="event tag-google" style="margin-left: 400px">
-                  <div class="time" style="width: 50px"></div>
-                  <b>11/2013</b> <a href="http://nyse.com/">Intercontinental Exchange</a> Senior Consultant
-                </div>
-
-                <div class="event tag-award" style="margin-left: 35px">
-                  <div class="time" style="width: 40px"></div>
-                  <b>06/2007-03/2007</b> <a href="http://lan-crawler.sourceforge.net/">Lan-Crawler</a> LAN indexer and search engine
-                </div>
-                <div class="event tag-award" style="margin-left: 210px">
-                  <div class="time" style="width: 5px"></div>
-                  <b>02/2010</b>Built JS Flurry RSS Reader  &amp; 10,001 HDR WallPapers iPhone app
-                </div>
-                <div class="event tag-award" style="margin-left: 220px">
-                  <div class="time" style="width: 20px"></div>
-                  <b>03/2010 - 06/2010</b>Launched <a href="https://nashidengi.ru">NashiDengi</a> Financial magazine
-                </div>
-                <div class="event tag-award" style="margin-left: 240px">
-                  <div class="time" style="width: 20px"></div>
-                  <b>07/2010 - 10/2010</b>
-                  Launched <a href="https://swarovskioptik.us">ProStaff Swaroswky Optic</a>
-                </div>
-                <div class="event tag-award" style="margin-left: 350px">
-                  <div class="time" style="width: 4.17px"></div>
-                  <b>11/2012</b>Launched <a href="https://github.com/cDima/Hue">Philips Hue lights .Net C# lib</a>
-                </div>
-                <div class="event tag-award" style="margin-left: 400px">
-                  <div class="time" style="width: 4.17px"></div>
-                  <b>11/2013</b>Launched <a href="https://github.com/cDima/">Ambieye.com</a> Philips Hue suite of apps
-                </div>
-                <div class="event tag-award" style="margin-left: 420px">
-                  <div class="time" style="width: 4.17px"></div>
-                  <b>04/2014</b>Launched <a href="https://github.com/cDima/Vtoure">VToure</a> Geo-Concerts for vk.com
-                </div>
-                <div class="event tag-award" style="margin-left: 430px">
-                  <div class="time" style="width: 4.17px"></div>
-                  <b>10/2015</b><a href="https://github.com/cDima/Aerial">Aerial Screensaver</a> open-source
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-        </div>     
-      </div>
-
-    </section>
-
-    <!-- Photos -->
-    <section id="photos" class="section">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Photos</h1>
-            <div id="instafeed"></div>
-            <p class="lead"> <span class="fa fa-instagram"></span>
-            Follow me on <a href="http://instagram.com/cdima" target="_blank">instagram</a>.</p>
-          </div>
-        </div>     
-      </div>
-
-    </section>
-
-
-    <!-- Places -->
-    <section id="places" class="section">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">  
-            <h1>Places</h1>
-            <p class="lead">I remember most places and events geographically and visualy. Geo-location networking should become larger than it is now. <a href="http://foursquare.com/cdima" target="_blank">follow me on 4sq</a>.</p>
-
-<div class="embed-responsive embed-responsive-4by3">
-  <iframe class="embed-responsive-item" src="//player.vimeo.com/video/17110111" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="//vimeo.com/17110111">Newport Daydream</a> from <a href="//vimeo.com/cdima">cdima</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-</div>
-
-          </div>
-        </div>     
-      </div>
-
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="page-section section-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Contact</h1>
-            <p class="lead">Let’s chat! I’m on the usual social networks, and available at <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=sadakov@gmail.com" target="_blank">sadakov@gmail.com</a>.</p>
-
-            <ul class="list-unstyled list-inline">
-
-              <li>
-                <a title="Email sadakov@gmail.com" class="tooltip-trigger icon-link" href="mailto:sadakov@gmail.com">
-                  <span class="entypo-mail entypo-icons"></span>
-                </a>
-              </li>
-              
-
-              <li>
-                <a title="" class="tooltip-trigger icon-link" href="https://twitter.com/cdima" target="_blank;" data-original-title="Follow me on twitter">
-                  <span class="fa fa-twitter"></span>
-                </a>
-              </li>
-
-              <li>
-                <a title="" class="tooltip-trigger icon-link" href="http://www.linkedin.com/in/sadakov" target="_blank;" data-original-title="Find me on LinkedIn">
-                  <span class="fa fa-linkedin"></span>
-                </a>
-              </li>
-
-              <li>
-                <a title="" class="tooltip-trigger icon-link" href="http://dribbble.com/cdima" target="_blank;" data-original-title="See my Dribbble profile">
-                  <span class="fa fa-dribbble"></span>
-                </a>
-              </li>
-              
-              <li>
-                <a title="" class="tooltip-trigger icon-link" href="http://www.flickr.com/photos/sadakov" target="_blank" data-original-title="Check me out on Flickr">
-                  <span class="fa fa-flickr"></span>
-                </a>
-              </li>
-
-              <li>
-                <a title="" class="tooltip-trigger icon-link" href="http://www.last.fm/user/cdima" target="_blank;" data-original-title="See what I&#39;m listening to">
-                  <span class="fa fa-lastfm"></span>
-                </a>
-              </li>
-
-              <li>
-                <a title="" class="tooltip-trigger icon-link" href="http://vk.com/sadakov" target="_blank;" data-original-title="See me on vk.com">
-                  <span class="fa fa-vk"></span>
-                </a>
-              </li>
-
-              <li>
-                <a title="" class="tooltip-trigger icon-link" href="http://foursquare.com/cdima" target="_blank;" data-original-title="See where I am">
-                  <span class="fa fa-foursquare"></span>
-                </a>
-              </li>
-
-              <li>
-                <a title="" class="tooltip-trigger icon-link" href="http://facebook.com/sadakov" target="_blank;" data-original-title="See my social graph">
-                  <span class="fa fa-facebook"></span>
-                </a>
-              </li>
-
-              <li>
-                <a title="" class="tooltip-trigger icon-link" href="http://quora.com/Dmitry-Sadakov" target="_blank;" data-original-title="See my questions to the world">Q
-                </a>
-              </li>
-              
-              <li>
-                <a title="" class="tooltip-trigger icon-link" href="http://github.com/cDima" target="_blank;" data-original-title="See my code">
-                  <span class="fa fa-github"></span>
-                </a>
-              </li>
-              
-              <li>
-                <a title="" class="tooltip-trigger icon-link" href="http://www.yelp.com/user_details?userid=zer5uN9WHL17dBQJgDm3GA" target="_blank;" data-original-title="See where I eat">
-                  <span class="fa fa-yelp"></span>
-                </a>
-              </li>
-
-              <li>
-                <a title="" class="tooltip-trigger icon-link" href="http://instagram.com/cdima" target="_blank;" data-original-title="See what I see">
-                  <span class="fa fa-instagram"></span>
-                </a>
-              </li>
-
-              <li>
-                <a title="" class="tooltip-trigger icon-link" href="http://youtube.com/user/cdima" target="_blank;" data-original-title="See what I capture">
-                  <span class="fa fa-youtube"></span>
-                </a>
-              </li>
-
-              <li>
-                <a title="" class="tooltip-trigger icon-link" href="http://stackoverflow.com/users/82054/cdima" target="_blank;" data-original-title="See what I answer">
-                  <span class="fa fa-stack-overflow"></span>
-                </a>
-              </li>
-
-              <li>
-                <a title="" class="tooltip-trigger icon-link" href="https://vimeo.com/cdima" target="_blank;" data-original-title="See what I edit">
-                  <span class="fa fa-vimeo-square"></span>
-                </a>
-              </li>
-
-            </ul>
-            
+        </div>
+        <div class="project-card">
+          <div class="project-content">
+            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+            <p>MS in Computer Science from Saint-Petersburg State Technical University.</p>
           </div>
         </div>
       </div>
-    </section>
-    
+    </div>
+  </section>
 
-
-    <!--
-         Portfolio 
-    -->
-    <section id="portfolio" class="portfolio-wrapper">
-
-      <section id="section-portfolio" class="section">
-
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-            </div>
-          </div>     
+  <!-- Timeline Section -->
+  <section id="timeline">
+    <div class="container">
+      <h2>Career Timeline</h2>
+      <div class="timeline-grid">
+        <!-- Recent -->
+        <div class="timeline-item">
+          <span class="timeline-date">04/2017 - Present</span>
+          <h3>Google</h3>
+          <p>Senior Software Engineer (SWE). Seattle, WA.</p>
         </div>
-      </section>
-    </section>
+        <div class="timeline-item">
+          <span class="timeline-date">04/2017</span>
+          <h3>Amazon</h3>
+          <p>SDE at AWS. Seattle, WA.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">07/2014 - 04/2017</span>
+          <h3>Essextec</h3>
+          <p>SDE / SRE / Data Wizard. New York, NY.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">07/2010 - 07/2014</span>
+          <h3>Gemini Systems</h3>
+          <p>SDE. New York, NY.</p>
+        </div>
 
-    <!-- jQuery -->
-    <script src="./scripts/jquery-2.0.3.min.js"></script>
-    <script src="./scripts/jquery-ui-1.10.3.custom.min.js"></script>
+        <!-- Early Career -->
+        <div class="timeline-item">
+          <span class="timeline-date">08/2010</span>
+          <h3>NYSE</h3>
+          <p>Senior Consultant. New York Stock Exchange.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">09/2009 - 01/2010</span>
+          <h3>VTB</h3>
+          <p>CRM Engineer. Moscow, Russia.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2002 - 2008</span>
+          <h3>Education</h3>
+          <p>Master's Degree in Computer Science, SPbSTU.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Bootstrap -->
-    <script src="./scripts/bootstrap.min.js"></script>
-    <script src="./scripts/instafeed.min.js"></script>
-    <script type="text/javascript">
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container" style="text-align: center;">
+      <h2>Get In Touch</h2>
+      <p>Let’s chat! I’m available at <a href="mailto:sadakov@gmail.com">sadakov@gmail.com</a></p>
 
-  var userFeed = new Instafeed({
-        get: 'user',
-        target: 'instafeed',
-        userId: 29907,
-        useHttp: true,
-        /*resolution: 'low_resolution',*/
-        limit: 12,
-        accessToken: '29907.467ede5.d331b2e14e8a4f7b8645814bd73049e5',
-        template: '<a target="_blank" href="{{link}}"><img src="{{image}}"  class="img-responsive img-rounded" /></a>'
-    });
-    userFeed.run();
+      <div class="social-links">
+        <a href="mailto:sadakov@gmail.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://twitter.com/cdima" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="http://www.linkedin.com/in/sadakov" class="social-icon" title="LinkedIn"><i
+            class="fab fa-linkedin"></i></a>
+        <a href="http://github.com/cDima" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="http://instagram.com/cdima" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
 
-</script>
-    <!--<script src="./scripts/scrollspy.js"></script>
-    <script src="./scripts/tooltip.js"></script>
-    <script src="./scripts/collapse.js"></script>
-    <script src="./scripts/transition.js"></script>-->
+      <footer style="margin-top: var(--spacing-xl); color: var(--text-secondary); font-size: 0.9rem;">
+        <p>&copy; 2025 Dmitry Sadakov. Built with modern web standards.</p>
+      </footer>
+    </div>
+  </section>
 
-    <script>
-      $('body').scrollspy({offset: 100});
+  <script src="scripts/script.js"></script>
+</body>
 
-       $('#nav').affix({
-             offset: {
-               top: $('#nav').position().top
-             }
-       }); 
-    </script>
-    <script src="./scripts/lazyload.js"></script>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-7543445-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-    <!-- Custom -->
-    <script src="./scripts/script.js"></script>  
-</body></html>
+</html>
