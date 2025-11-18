@@ -75,6 +75,7 @@ h6 {
 h1 {
     font-size: clamp(3rem, 5vw, 5rem);
     background: var(--gradient-primary);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: var(--spacing-md);
@@ -166,7 +167,7 @@ section {
 
 /* Hero Section */
 #section-intro {
-    min-height: 100vh;
+    min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
